@@ -12,7 +12,7 @@
             <a onclick="
                 fetch('html').then(function(response){
                     response.text().then(function(text){
-                        $('article').innerHTML = text;
+                        $('article').innerHTML(text);
                     })
                 })">
                 HTML
@@ -22,7 +22,7 @@
             <a onclick="
                 fetch('css').then(function(response){
                     response.text().then(function(text){
-                        $('article').innerHTML = text;
+                        $('article').innerHTML(text);
                     })
                 })">
                 CSS
@@ -32,7 +32,7 @@
             <a onclick="
                 fetch('javascript').then(function(response){
                     response.text().then(function(text){
-                        $('article').innerHTML = text;
+                        $('article').innerHTML(text);
                     })
                 })">
                 Javascript
