@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <ol>
+        <li>
+            <a onclick="
+                fetch('html').then(function(response){
+                    response.text().then(function(text){
+                        $('article').innerHTML = text;
+                    })
+                })">
+                HTML
+            </a>
+        </li>
+        <li>
+            <a onclick="
+                fetch('css').then(function(response){
+                    response.text().then(function(text){
+                        $('article').innerHTML = text;
+                    })
+                })">
+                CSS
+            </a>
+        </li>
+        <li>
+            <a onclick="
+                fetch('javascript').then(function(response){
+                    response.text().then(function(text){
+                        $('article').innerHTML = text;
+                    })
+                })">
+                Javascript
+            </a>
+        </li>
+    </ol>
+    <article></article>
+</body>
+</html>
