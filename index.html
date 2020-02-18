@@ -9,34 +9,34 @@
 <body>
     <ol>
         <li>
-            <a onclick="
+            <button onclick="
                 fetch('html').then(function(response){
                     response.text().then(function(text){
                         $('article').innerHTML(text);
                     })
                 })">
                 HTML
-            </a>
+            </button>
         </li>
         <li>
-            <a onclick="
+            <button onclick="
                 fetch('css').then(function(response){
                     response.text().then(function(text){
                         $('article').innerHTML(text);
                     })
                 })">
                 CSS
-            </a>
+            </button>
         </li>
         <li>
-            <a onclick="
+            <button onclick="
                 fetch('javascript').then(function(response){
                     response.text().then(function(text){
                         $('article').innerHTML(text);
                     })
                 })">
                 Javascript
-            </a>
+            </button>
         </li>
     </ol>
     <article></article>
