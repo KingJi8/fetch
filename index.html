@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
-    <ol>
+    <!-- <ol>
         <li>
             <button onclick="
                 fetch('html').then(function(response){
@@ -38,7 +38,13 @@
                 Javascript
             </button>
         </li>
-    </ol>
+    </ol> -->
+    <input type="button" value="fetch" onclick="
+    fetch('html').then(function(response){
+        response.text().then(function(text){
+            document.querySelector('article').innerHTML = text;
+        })
+    ">
     <article></article>
 </body>
 </html>
